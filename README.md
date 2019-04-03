@@ -2,4 +2,7 @@
 
 All the learnings here
 
-Read- Clean Code Book
+Read - Clean Code Book
+
+Useful Links -
+https://dmitripavlutin.com/coding-like-shakespeare-practical-function-naming-conventions/
