@@ -2,7 +2,7 @@
 
 All the learnings here
 
-Read - Clean Code Book
+Read - **Clean Code Book**
 
 
 Useful Links -  
