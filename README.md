@@ -23,3 +23,7 @@ https://multithreaded.stitchfix.com/blog/2019/03/11/FullStackDS-Generalists/?
 
 **Automate Linking between Local Drive to Google Drive**
 
+
+**Algorithm Practice**
+- https://github.com/kdn251/interviews
+
