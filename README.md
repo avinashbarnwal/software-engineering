@@ -15,7 +15,10 @@ https://stackoverflow.com/questions/575196/why-can-a-function-modify-some-argume
 https://docs.python-guide.org/writing/structure/  
 
 **Object Oriented Programming**  
-https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260
+https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260  
+
+**Full Stack Data Science**  
+https://multithreaded.stitchfix.com/blog/2019/03/11/FullStackDS-Generalists/?
 
 
 **Automate Linking between Local Drive to Google Drive**
