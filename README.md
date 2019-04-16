@@ -19,6 +19,7 @@ Read
 
 **Full Stack Data Science**  
 - https://multithreaded.stitchfix.com/blog/2019/03/11/FullStackDS-Generalists/?
+- https://towardsdatascience.com/why-every-data-scientist-should-use-dask-81b2b850e15b
 
 
 **Automate Linking between Local Drive to Google Drive**
