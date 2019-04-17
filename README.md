@@ -29,3 +29,7 @@ Read
 **Algorithm Practice**
 - https://github.com/kdn251/interviews
 
+
+**Angularjs**
+- https://blog.revillweb.com/angularjs-tutorial-learn-angularjs-in-30-minutes-35b5eae52dc2
+
