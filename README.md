@@ -21,7 +21,7 @@ Read
 - https://multithreaded.stitchfix.com/blog/2019/03/11/FullStackDS-Generalists/?
 - https://towardsdatascience.com/why-every-data-scientist-should-use-dask-81b2b850e15b
 - https://github.com/MLWave/Kaggle-Ensemble-Guide
-
+- https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary
 
 **Automate Linking between Local Drive to Google Drive**
 
