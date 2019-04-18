@@ -23,6 +23,7 @@ Read
 - https://github.com/MLWave/Kaggle-Ensemble-Guide
 - https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary
 - https://people.duke.edu/~ccc14/sta-663/CUDAPython.html
+- https://mathisonian.github.io/kde/
 
 **Automate Linking between Local Drive to Google Drive**
 
