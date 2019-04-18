@@ -22,6 +22,7 @@ Read
 - https://towardsdatascience.com/why-every-data-scientist-should-use-dask-81b2b850e15b
 - https://github.com/MLWave/Kaggle-Ensemble-Guide
 - https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary
+- https://people.duke.edu/~ccc14/sta-663/CUDAPython.html
 
 **Automate Linking between Local Drive to Google Drive**
 
