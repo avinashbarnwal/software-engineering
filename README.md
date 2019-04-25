@@ -42,3 +42,6 @@ Read
 **Machine Learning Systems**
 - https://code.fb.com/ml-applications/evaluating-boosted-decision-trees-for-billions-of-users/
 
+**OR-Tools**
+- https://github.com/google/or-tools/blob/master/ortools/sat/doc/solver.md
+
