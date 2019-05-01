@@ -47,6 +47,9 @@ Read
 **OR-Tools**
 - https://github.com/google/or-tools/blob/master/ortools/sat/doc/solver.md
 
-
+**API**
+- https://www.kaggle.com/rtatman/careercon-intro-to-apis
+- https://www.kaggle.com/rtatman/careercon-making-an-app-from-your-modeling-code
+- https://www.kaggle.com/rtatman/careercon-deploying-apis-on-heroku-appengine/
 
 
