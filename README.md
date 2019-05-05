@@ -53,3 +53,6 @@ Read
 - https://www.kaggle.com/rtatman/careercon-deploying-apis-on-heroku-appengine/
 
 
+**Graph Coloring**
+- http://graphstream-project.org/doc/Algorithms/Welsh-Powell/
+
