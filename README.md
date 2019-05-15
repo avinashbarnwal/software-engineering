@@ -43,6 +43,7 @@ Read
 **Machine Learning Systems**
 - https://code.fb.com/ml-applications/evaluating-boosted-decision-trees-for-billions-of-users/
 - https://github.com/juanjoneri/SURP-2018
+- https://www.infoq.com/presentations/doordash-real-time-predictions
 
 **OR-Tools**
 - https://github.com/google/or-tools/blob/master/ortools/sat/doc/solver.md
