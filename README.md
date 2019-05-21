@@ -57,3 +57,8 @@ Read
 **Graph Coloring**
 - http://graphstream-project.org/doc/Algorithms/Welsh-Powell/
 
+**Software Design**
+- https://design.quora.com/Why-Mechanics-Design
+
+
+
