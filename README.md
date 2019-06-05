@@ -25,6 +25,7 @@ Read
 - https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary
 - https://people.duke.edu/~ccc14/sta-663/CUDAPython.html
 - https://mathisonian.github.io/kde/
+- https://towardsdatascience.com/deconstructing-metrics-on-medium-bf5b4863bf96?sk=8bd7eb3ae6d762eccb2111788c7a8933
 - Unit Test - https://github.com/slundberg/shap/tree/master/tests/explainers
 
 **Automate Linking between Local Drive to Google Drive**
