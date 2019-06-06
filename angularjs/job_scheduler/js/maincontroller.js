@@ -1,4 +1,3 @@
-
 app.controller('MainSchedulerCtrl', function($scope) {
   $scope.tasks = {
     data:[
@@ -17,3 +16,4 @@ app.controller('MainSchedulerCtrl', function($scope) {
     ]};
 
 });
+
