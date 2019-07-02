@@ -37,6 +37,7 @@ Read
 
 **Angularjs**
 - https://blog.revillweb.com/angularjs-tutorial-learn-angularjs-in-30-minutes-35b5eae52dc2
+- 
 
 **Must Do Courses**
 - https://see.stanford.edu/Course/CS106B
