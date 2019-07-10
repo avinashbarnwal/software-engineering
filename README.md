@@ -63,4 +63,7 @@ Read
 - https://design.quora.com/Why-Mechanics-Design
 
 
+**Java**
+- https://stackoverflow.com/questions/18140964/return-different-type-of-data-from-a-method-in-java
+
 
