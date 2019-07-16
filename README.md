@@ -65,5 +65,6 @@ Read
 
 **Java**
 - https://stackoverflow.com/questions/18140964/return-different-type-of-data-from-a-method-in-java
+- It has 0 length array.
 
 
