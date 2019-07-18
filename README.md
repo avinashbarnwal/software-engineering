@@ -67,5 +67,7 @@ Read
 - https://stackoverflow.com/questions/18140964/return-different-type-of-data-from-a-method-in-java
 - It has 0 length array.
 - Counter java - https://stackoverflow.com/questions/32348453/python-counter-alternative-for-java.
+- What is ObjectMapper?
+
 
 
