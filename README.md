@@ -68,6 +68,8 @@ Read
 - It has 0 length array.
 - Counter java - https://stackoverflow.com/questions/32348453/python-counter-alternative-for-java.
 - What is ObjectMapper?
-
+- What is the use of SpringBootApplication?
+  Ans - If we comment @SpringBootApplication and SpringApplication.run(JobShopApplication.class, args).
+  It doesn't produce web application.
 
 
