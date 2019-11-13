@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://markdownnotes.com/app/#/?note=18353 -->
+<html ng-app="notes" class="ng-scope gr__markdownnotes_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>Notes | Markdown Notes: fast markdown editor with LaTeX support</title>
+    <meta name="description" content="A markdown editor with LaTeX support, image uploads, code highlighting and print support.">
+    <script async="" src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/analytics.js"></script><script src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/angular.min.js"></script>
+    <script src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/angular-resource.min.js"></script>
+    <script src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/angular-route.min.js"></script>
+    <script src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/jstz.min.js"></script>
+    <script src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/angular.min(1).js"></script>
+    <script src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/raven.min.js" crossorigin="anonymous"></script>
+    <script>Raven.config('https://43437bfee06b4e52966aac5a98430b48@sentry.io/112534').install();</script>
+    <script type="text/javascript" src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/7b4c79cea920.js"></script>
+    
+    <script src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/app-config.js"></script>
+
+    <script type="text/javascript" src="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/MathJax.js"></script>
+    <link rel="stylesheet" href="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/28e476126ee3.css" type="text/css">
+    <link href="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Notes _ Markdown Notes_ fast markdown editor with LaTeX support_files/ionicons.min.css">
+    <link rel="icon" type="image/png" href="http://markdownnotes.com/static/img/favicon.png">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0">
+    
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body data-gr-c-s-loaded="true"><div id="MathJax_Message" style="display: none;"></div>
+    
+    
+    <div ng-app="notes">
+    <input type="hidden" name="csrfmiddlewaretoken" value="SXUz6v8G94ZXC5EKvPb8a7NvMr4PRdXy">
+    <!-- ngView: --><div ng-view="" class="app ng-scope"><div id="markdownnotes-wrapper" ng-class="displayMode" set-mode-on-resize="" class="ng-scope hybrid">
+    <div id="file-drop" imagedrop="" on-image-drop="uploadImage()">
+        <h1>Drop images anywhere to insert them</h1>
+    </div>
+    <div id="messages">
+        <!-- ngRepeat: message in messageService.messages --><div ng-repeat="message in messageService.messages" class="message error">
+            <span ng-bind-html="message.message" class="ng-binding">An error occured while saving the note.</span>
+            <i ng-hide="message.timeout" class="icon dismiss ion-ios-close-empty ng-hide" ng-click="messageService.remove(message)"></i>
+        </div><!-- end ngRepeat: message in messageService.messages -->
+    </div>
+    <div id="news_container">
+        <!-- ngRepeat: news in newsCollection track by $index -->
+    </div>
+    <div ng-show="shareWindowOpen" class="modal share ng-hide">
+        <h2>Share this note</h2>
+        <i class="close icon ion-ios-close-outline" ng-click="shareWindowOpen = null"></i>
+        <div class="share-url ng-binding" ng-bind="&#39;http://markdownnotes.com/+&#39; + notesService.notes.active[currentNoteIndex].public_id">http://markdownnotes.com/+tq9mc</div>
+        <span class="hint">People who know this URL can see this note, but cannot edit it.</span>
+    </div>
+    <header>
+        <nav id="menu-bar"><!--
+            --><a id="btn-mode-input" title="Show only the editor window" ng-click="toggleMode(MODE_INPUT_ONLY)">Editor</a><!--
+            --><span class="separator"></span><!--
+            --><a id="btn-mode-hybrid" title="Show the editor and preview window" ng-click="toggleMode(MODE_HYBRID)">Editor + Preview</a><!--
+            --><span class="separator"></span><!--
+            --><a id="btn-mode-output" title="Show only the preview window" ng-click="toggleMode(MODE_OUTPUT_ONLY)">Preview</a><!--
+            --><span class="separator"></span><!--
+            --><a title="Share this note" ng-click="shareWindowOpen = true"><i class="icon ion-ios-redo"></i> Share</a><!--
+            --><span class="separator"></span><!--
+            --><a id="btn-mode-fullscreen" title="Toggle full screen mode" fullscreen=""><i class="icon ion-arrow-expand"></i></a>
+        </nav>
+        <a href="http://markdownnotes.com/app/" id="btn-menu" ng-click="sideMenuOpen = !sideMenuOpen" ng-class="{&#39;open&#39;: sideMenuOpen}">Menu</a>
+        <div id="note-title-wrapper">
+            <input type="text" id="note-title" placeholder="Untitled note" tabindex="1" ng-model="notesService.notes.active[currentNoteIndex].title" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+        </div>
+    </header>
+    <div id="main">
+        <nav id="side-menu" ng-class="{&#39;open&#39;: sideMenuOpen}">
+            <ul>
+                <li class="new">
+                    <a ng-click="createNote(true)">
+                        <i class="icon ion-ios-compose-outline"></i>Create a note
+                    </a>
+                </li>
+                <li ng-class="{&#39;creating-notebook&#39;: creatingNotebook}" new-notebook-menu-item="">   <a ng-click="newNotebook()" ng-hide="creatingNotebook">       <i class="icon ion-ios-browsers-outline"></i>Create a notebook   </a>   <span class="editable ng-hide" ng-show="creatingNotebook">       <i class="icon ion-ios-browsers-outline"></i>       <input type="text" ng-model="newNotebookTitle" placeholder="Give your notebook a name" class="ng-pristine ng-untouched ng-valid ng-empty">   </span>   <div class="actions ng-hide" ng-show="creatingNotebook">       <a ng-click="saveNotebook()" class="icon ion-ios-checkmark-outline"></a>       <a ng-click="cancelNewNotebook()" class="icon ion-ios-close-outline"></a>   </div></li>
+                <li class="separator"></li>
+                <!-- ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18353" href="http://markdownnotes.com/app/#/?note=18353">
+    <span class="title ng-binding">AWS EC2<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-11-09T05:27:32.278Z" title="Saturday, November 9, 2019 12:27 AM">a few seconds ago</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=22284" href="http://markdownnotes.com/app/#/?note=22284">
+    <span class="title ng-binding">Cover Letter<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-10-05T05:47:12.000Z" title="Saturday, October 5, 2019 1:47 AM">October 5, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21907" href="http://markdownnotes.com/app/#/?note=21907">
+    <span class="title ng-binding">Best Buy<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-08-17T12:39:09.000Z" title="Saturday, August 17, 2019 8:39 AM">August 17, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21887" href="http://markdownnotes.com/app/#/?note=21887">
+    <span class="title ng-binding">Demo Link3d SpringBoot<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-08-12T18:28:15.000Z" title="Monday, August 12, 2019 2:28 PM">August 12, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21880" href="http://markdownnotes.com/app/#/?note=21880">
+    <span class="title ng-binding">Applying to the Jobs<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-08-12T03:35:03.000Z" title="Sunday, August 11, 2019 11:35 PM">August 11, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21863" href="http://markdownnotes.com/app/#/?note=21863">
+    <span class="title ng-binding">IntelliJ<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-08-07T19:35:32.000Z" title="Wednesday, August 7, 2019 3:35 PM">August 7, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21835" href="http://markdownnotes.com/app/#/?note=21835">
+    <span class="title ng-binding">xgboost<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-08-02T04:13:04.000Z" title="Friday, August 2, 2019 12:13 AM">August 2, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21832" href="http://markdownnotes.com/app/#/?note=21832">
+    <span class="title ng-binding">Export Python Path<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-07-31T19:06:51.000Z" title="Wednesday, July 31, 2019 3:06 PM">July 31, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21788" href="http://markdownnotes.com/app/#/?note=21788">
+    <span class="title ng-binding">Install Ortools for Mac<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-07-18T20:52:25.000Z" title="Thursday, July 18, 2019 4:52 PM">July 18, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21735" href="http://markdownnotes.com/app/#/?note=21735">
+    <span class="title ng-binding">c++<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-07-04T15:03:38.000Z" title="Thursday, July 4, 2019 11:03 AM">July 4, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21691" href="http://markdownnotes.com/app/#/?note=21691">
+    <span class="title ng-binding">Install Jupyter Notebook on AWS EC2<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-06-27T18:27:05.000Z" title="Thursday, June 27, 2019 2:27 PM">June 27, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21651" href="http://markdownnotes.com/app/#/?note=21651">
+    <span class="title ng-binding">Teradata<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-06-17T00:26:30.000Z" title="Sunday, June 16, 2019 8:26 PM">June 16, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21650" href="http://markdownnotes.com/app/#/?note=21650">
+    <span class="title ng-binding">Design<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-06-16T19:11:21.000Z" title="Sunday, June 16, 2019 3:11 PM">June 16, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21632" href="http://markdownnotes.com/app/#/?note=21632">
+    <span class="title ng-binding">How to run Flask Web App on EC2<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-06-12T19:08:02.000Z" title="Wednesday, June 12, 2019 3:08 PM">June 12, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21603" href="http://markdownnotes.com/app/#/?note=21603">
+    <span class="title ng-binding">Web-Development<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-06-06T17:12:57.000Z" title="Thursday, June 6, 2019 1:12 PM">June 6, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21602" href="http://markdownnotes.com/app/#/?note=21602">
+    <span class="title ng-binding">Streaming Services<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-06-06T17:12:54.000Z" title="Thursday, June 6, 2019 1:12 PM">June 6, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21576" href="http://markdownnotes.com/app/#/?note=21576">
+    <span class="title ng-binding">AI<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-06-01T15:16:28.000Z" title="Saturday, June 1, 2019 11:16 AM">June 1, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21561" href="http://markdownnotes.com/app/#/?note=21561">
+    <span class="title ng-binding">Java<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-30T18:32:41.000Z" title="Thursday, May 30, 2019 2:32 PM">May 30, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21535" href="http://markdownnotes.com/app/#/?note=21535">
+    <span class="title ng-binding">Product Management<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-28T04:20:07.000Z" title="Tuesday, May 28, 2019 12:20 AM">May 28, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21521" href="http://markdownnotes.com/app/#/?note=21521">
+    <span class="title ng-binding">Spring Boot<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-26T03:29:56.000Z" title="Saturday, May 25, 2019 11:29 PM">May 25, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21520" href="http://markdownnotes.com/app/#/?note=21520">
+    <span class="title ng-binding">Street Fights tip for Java<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-25T19:40:17.000Z" title="Saturday, May 25, 2019 3:40 PM">May 25, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21498" href="http://markdownnotes.com/app/#/?note=21498">
+    <span class="title ng-binding">Interesting Read<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-24T04:36:52.000Z" title="Friday, May 24, 2019 12:36 AM">May 24, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21478" href="http://markdownnotes.com/app/#/?note=21478">
+    <span class="title ng-binding">Mac<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-22T03:10:23.000Z" title="Tuesday, May 21, 2019 11:10 PM">May 21, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21436" href="http://markdownnotes.com/app/#/?note=21436">
+    <span class="title ng-binding">How to Setup MySQL on Mac<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-13T18:41:15.000Z" title="Monday, May 13, 2019 2:41 PM">May 13, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21380" href="http://markdownnotes.com/app/#/?note=21380">
+    <span class="title ng-binding">Imbalanced<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-08T20:25:57.000Z" title="Wednesday, May 8, 2019 4:25 PM">May 8, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21342" href="http://markdownnotes.com/app/#/?note=21342">
+    <span class="title ng-binding">Downloading MySQL from Link3D<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-02T20:38:37.000Z" title="Thursday, May 2, 2019 4:38 PM">May 2, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21309" href="http://markdownnotes.com/app/#/?note=21309">
+    <span class="title ng-binding">Software Engineering<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-26T14:46:21.000Z" title="Friday, April 26, 2019 10:46 AM">April 26, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21297" href="http://markdownnotes.com/app/#/?note=21297">
+    <span class="title ng-binding">Data Science Ideas<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-24T03:38:32.000Z" title="Tuesday, April 23, 2019 11:38 PM">April 23, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21292" href="http://markdownnotes.com/app/#/?note=21292">
+    <span class="title ng-binding">Quora<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-23T19:34:26.000Z" title="Tuesday, April 23, 2019 3:34 PM">April 23, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21282" href="http://markdownnotes.com/app/#/?note=21282">
+    <span class="title ng-binding">StartUp Links<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-22T17:14:05.000Z" title="Monday, April 22, 2019 1:14 PM">April 22, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21280" href="http://markdownnotes.com/app/#/?note=21280">
+    <span class="title ng-binding">Amazon<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-22T04:13:01.000Z" title="Monday, April 22, 2019 12:13 AM">April 22, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21279" href="http://markdownnotes.com/app/#/?note=21279">
+    <span class="title ng-binding">Management Practices<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-22T04:01:12.000Z" title="Monday, April 22, 2019 12:01 AM">April 22, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21196" href="http://markdownnotes.com/app/#/?note=21196">
+    <span class="title ng-binding">CEO<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-08T23:04:27.000Z" title="Monday, April 8, 2019 7:04 PM">April 8, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21169" href="http://markdownnotes.com/app/#/?note=21169">
+    <span class="title ng-binding">Functional vs Object Oriented<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-03T14:17:03.000Z" title="Wednesday, April 3, 2019 10:17 AM">April 3, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21151" href="http://markdownnotes.com/app/#/?note=21151">
+    <span class="title ng-binding">Gsoc Proposal<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-04-01T02:06:10.000Z" title="Sunday, March 31, 2019 10:06 PM">March 31, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21148" href="http://markdownnotes.com/app/#/?note=21148">
+    <span class="title ng-binding">Binomial Loss<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-03-31T20:39:37.000Z" title="Sunday, March 31, 2019 4:39 PM">March 31, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21138" href="http://markdownnotes.com/app/#/?note=21138">
+    <span class="title ng-binding">Cython<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-03-29T15:13:47.000Z" title="Friday, March 29, 2019 11:13 AM">March 29, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=21129" href="http://markdownnotes.com/app/#/?note=21129">
+    <span class="title ng-binding">Ortools<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-03-29T00:44:21.000Z" title="Thursday, March 28, 2019 8:44 PM">March 28, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20971" href="http://markdownnotes.com/app/#/?note=20971">
+    <span class="title ng-binding">Books to read<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-03-11T03:51:38.000Z" title="Sunday, March 10, 2019 11:51 PM">March 10, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20969" href="http://markdownnotes.com/app/#/?note=20969">
+    <span class="title ng-binding">Product Management<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-03-10T21:31:11.000Z" title="Sunday, March 10, 2019 5:31 PM">March 10, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20931" href="http://markdownnotes.com/app/#/?note=20931">
+    <span class="title ng-binding">Google Data Scientist<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-03-05T03:36:17.000Z" title="Monday, March 4, 2019 10:36 PM">March 4, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20913" href="http://markdownnotes.com/app/#/?note=20913">
+    <span class="title ng-binding">Life Lessons<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-03-02T21:29:53.000Z" title="Saturday, March 2, 2019 4:29 PM">March 2, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20909" href="http://markdownnotes.com/app/#/?note=20909">
+    <span class="title ng-binding">A/B Testing<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-03-02T04:22:05.000Z" title="Friday, March 1, 2019 11:22 PM">March 1, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20892" href="http://markdownnotes.com/app/#/?note=20892">
+    <span class="title ng-binding">Kaggle<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-02-28T17:29:42.000Z" title="Thursday, February 28, 2019 12:29 PM">February 28, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20869" href="http://markdownnotes.com/app/#/?note=20869">
+    <span class="title ng-binding">New Feature Selection<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-02-26T17:26:48.000Z" title="Tuesday, February 26, 2019 12:26 PM">February 26, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20813" href="http://markdownnotes.com/app/#/?note=20813">
+    <span class="title ng-binding">Forecasting<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-02-22T07:51:44.000Z" title="Friday, February 22, 2019 2:51 AM">February 22, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20806" href="http://markdownnotes.com/app/#/?note=20806">
+    <span class="title ng-binding">StartUps<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-02-21T20:31:46.000Z" title="Thursday, February 21, 2019 3:31 PM">February 21, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20725" href="http://markdownnotes.com/app/#/?note=20725">
+    <span class="title ng-binding">SQL<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-02-13T20:22:18.000Z" title="Wednesday, February 13, 2019 3:22 PM">February 13, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20640" href="http://markdownnotes.com/app/#/?note=20640">
+    <span class="title ng-binding">Gardient Boosting<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-02-04T22:54:03.000Z" title="Monday, February 4, 2019 5:54 PM">February 4, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20473" href="http://markdownnotes.com/app/#/?note=20473">
+    <span class="title ng-binding">Life Motivation<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-01-16T17:28:33.000Z" title="Wednesday, January 16, 2019 12:28 PM">January 16, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20458" href="http://markdownnotes.com/app/#/?note=20458">
+    <span class="title ng-binding">Constraints Programming<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2019-01-14T20:01:11.000Z" title="Monday, January 14, 2019 3:01 PM">January 14, 2019</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=20184" href="http://markdownnotes.com/app/#/?note=20184">
+    <span class="title ng-binding">AngularJS<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-12-07T14:15:18.000Z" title="Friday, December 7, 2018 9:15 AM">December 7, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19834" href="http://markdownnotes.com/app/#/?note=19834">
+    <span class="title ng-binding">JSON<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-11-01T17:17:21.000Z" title="Thursday, November 1, 2018 1:17 PM">November 1, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19816" href="http://markdownnotes.com/app/#/?note=19816">
+    <span class="title ng-binding">UI<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-10-31T13:17:47.000Z" title="Wednesday, October 31, 2018 9:17 AM">October 31, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19798" href="http://markdownnotes.com/app/#/?note=19798">
+    <span class="title ng-binding">Life<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-10-30T06:07:03.000Z" title="Tuesday, October 30, 2018 2:07 AM">October 30, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19783" href="http://markdownnotes.com/app/#/?note=19783">
+    <span class="title ng-binding">interview<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-10-28T10:39:45.000Z" title="Sunday, October 28, 2018 6:39 AM">October 28, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19782" href="http://markdownnotes.com/app/#/?note=19782">
+    <span class="title ng-binding">LeetCode1<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-10-28T06:02:52.000Z" title="Sunday, October 28, 2018 2:02 AM">October 28, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19781" href="http://markdownnotes.com/app/#/?note=19781">
+    <span class="title ng-binding">Python<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-10-28T03:21:03.000Z" title="Saturday, October 27, 2018 11:21 PM">October 27, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19631" href="http://markdownnotes.com/app/#/?note=19631">
+    <span class="title ng-binding">MPI<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-10-11T18:11:27.000Z" title="Thursday, October 11, 2018 2:11 PM">October 11, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19467" href="http://markdownnotes.com/app/#/?note=19467">
+    <span class="title ng-binding">Logistic regression in Tree<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-09-28T17:44:11.000Z" title="Friday, September 28, 2018 1:44 PM">September 28, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19420" href="http://markdownnotes.com/app/#/?note=19420">
+    <span class="title ng-binding">Seawulf<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-09-25T19:15:30.000Z" title="Tuesday, September 25, 2018 3:15 PM">September 25, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=19240" href="http://markdownnotes.com/app/#/?note=19240">
+    <span class="title ng-binding">Linux Systems<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-09-10T14:29:09.000Z" title="Monday, September 10, 2018 10:29 AM">September 10, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18990" href="http://markdownnotes.com/app/#/?note=18990">
+    <span class="title ng-binding">Model Interpretation<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-08-22T18:10:51.000Z" title="Wednesday, August 22, 2018 2:10 PM">August 22, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18980" href="http://markdownnotes.com/app/#/?note=18980">
+    <span class="title ng-binding">Feature Selection<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-08-21T20:07:06.000Z" title="Tuesday, August 21, 2018 4:07 PM">August 21, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18688" href="http://markdownnotes.com/app/#/?note=18688">
+    <span class="title ng-binding">LightGBM vs Catboost vs Xgboost<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-07-24T20:46:34.000Z" title="Tuesday, July 24, 2018 4:46 PM">July 24, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18625" href="http://markdownnotes.com/app/#/?note=18625">
+    <span class="title ng-binding">Home Loan Default<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-07-20T15:09:05.000Z" title="Friday, July 20, 2018 11:09 AM">July 20, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18513" href="http://markdownnotes.com/app/#/?note=18513">
+    <span class="title ng-binding">Sequence Labeling<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-07-15T04:18:06.000Z" title="Sunday, July 15, 2018 12:18 AM">July 15, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18450" href="http://markdownnotes.com/app/#/?note=18450">
+    <span class="title ng-binding">Management Funda<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-07-10T13:03:46.000Z" title="Tuesday, July 10, 2018 9:03 AM">July 10, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18383" href="http://markdownnotes.com/app/#/?note=18383">
+    <span class="title ng-binding">Parallelization<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-07-05T15:12:32.000Z" title="Thursday, July 5, 2018 11:12 AM">July 5, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18216" href="http://markdownnotes.com/app/#/?note=18216">
+    <span class="title ng-binding">Ensembel<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-06-24T05:49:54.000Z" title="Sunday, June 24, 2018 1:49 AM">June 24, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18183" href="http://markdownnotes.com/app/#/?note=18183">
+    <span class="title ng-binding">Named Entity<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-06-20T23:48:57.000Z" title="Wednesday, June 20, 2018 7:48 PM">June 20, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=18159" href="http://markdownnotes.com/app/#/?note=18159">
+    <span class="title ng-binding">Mongodb<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-06-18T16:18:22.000Z" title="Monday, June 18, 2018 12:18 PM">June 18, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=17852" href="http://markdownnotes.com/app/#/?note=17852">
+    <span class="title ng-binding">Building Recommendation Systems<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-05-25T18:54:53.000Z" title="Friday, May 25, 2018 2:54 PM">May 25, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=17745" href="http://markdownnotes.com/app/#/?note=17745">
+    <span class="title ng-binding">Deep Learning<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-05-16T16:35:27.000Z" title="Wednesday, May 16, 2018 12:35 PM">May 16, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=17739" href="http://markdownnotes.com/app/#/?note=17739">
+    <span class="title ng-binding">Shell Scripting<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-05-16T13:46:17.000Z" title="Wednesday, May 16, 2018 9:46 AM">May 16, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=17665" href="http://markdownnotes.com/app/#/?note=17665">
+    <span class="title ng-binding">Bitcoin Crash<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-05-12T05:51:54.000Z" title="Saturday, May 12, 2018 1:51 AM">May 12, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=17186" href="http://markdownnotes.com/app/#/?note=17186">
+    <span class="title ng-binding">Local Minima<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-04-06T22:04:05.000Z" title="Friday, April 6, 2018 6:04 PM">April 6, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=17185" href="http://markdownnotes.com/app/#/?note=17185">
+    <span class="title ng-binding">Datasets<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-04-06T20:40:12.000Z" title="Friday, April 6, 2018 4:40 PM">April 6, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=17116" href="http://markdownnotes.com/app/#/?note=17116">
+    <span class="title ng-binding">Regularized Regression<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-04-01T02:49:25.000Z" title="Saturday, March 31, 2018 10:49 PM">March 31, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=16965" href="http://markdownnotes.com/app/#/?note=16965">
+    <span class="title ng-binding">Books to Read<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-03-19T03:59:19.000Z" title="Sunday, March 18, 2018 11:59 PM">March 18, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=16531" href="http://markdownnotes.com/app/#/?note=16531">
+    <span class="title ng-binding">Algorithm in Python<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-02-17T05:30:56.000Z" title="Saturday, February 17, 2018 12:30 AM">February 17, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=16143" href="http://markdownnotes.com/app/#/?note=16143">
+    <span class="title ng-binding">New R Tips<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2018-01-25T20:22:12.000Z" title="Thursday, January 25, 2018 3:22 PM">January 25, 2018</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=15631" href="http://markdownnotes.com/app/#/?note=15631">
+    <span class="title ng-binding">Intelligent Systems<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-12-26T19:21:24.000Z" title="Tuesday, December 26, 2017 2:21 PM">December 26, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=15236" href="http://markdownnotes.com/app/#/?note=15236">
+    <span class="title ng-binding">Street Fight Tips for Technical Writing<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-11-29T19:19:39.000Z" title="Wednesday, November 29, 2017 2:19 PM">November 29, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=15053" href="http://markdownnotes.com/app/#/?note=15053">
+    <span class="title ng-binding">How to Use David<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-11-18T19:58:16.000Z" title="Saturday, November 18, 2017 2:58 PM">November 18, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14912" href="http://markdownnotes.com/app/#/?note=14912">
+    <span class="title ng-binding">SVD<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-11-10T06:40:53.000Z" title="Friday, November 10, 2017 1:40 AM">November 10, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14861" href="http://markdownnotes.com/app/#/?note=14861">
+    <span class="title ng-binding">Chapter - 9 Statistical Inference<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-11-07T03:58:59.000Z" title="Monday, November 6, 2017 10:58 PM">November 6, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14858" href="http://markdownnotes.com/app/#/?note=14858">
+    <span class="title ng-binding">Doubts in C++<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-11-06T23:34:44.000Z" title="Monday, November 6, 2017 6:34 PM">November 6, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14857" href="http://markdownnotes.com/app/#/?note=14857">
+    <span class="title ng-binding">Steps to fast CVXPY<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-11-06T22:54:42.000Z" title="Monday, November 6, 2017 5:54 PM">November 6, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14806" href="http://markdownnotes.com/app/#/?note=14806">
+    <span class="title ng-binding">Probabilistic graphical Models<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-11-02T16:42:26.000Z" title="Thursday, November 2, 2017 12:42 PM">November 2, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14771" href="http://markdownnotes.com/app/#/?note=14771">
+    <span class="title ng-binding">Presentation for AMS571<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-31T18:25:11.000Z" title="Tuesday, October 31, 2017 2:25 PM">October 31, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14769" href="http://markdownnotes.com/app/#/?note=14769">
+    <span class="title ng-binding">Street Fight Tips for Design Pattern<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-31T16:45:08.000Z" title="Tuesday, October 31, 2017 12:45 PM">October 31, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14734" href="http://markdownnotes.com/app/#/?note=14734">
+    <span class="title ng-binding">Street Fight Tips for Snap(Python)<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-29T20:47:37.000Z" title="Sunday, October 29, 2017 4:47 PM">October 29, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14462" href="http://markdownnotes.com/app/#/?note=14462">
+    <span class="title ng-binding">Street Fight Notes on Github<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-11T19:35:15.000Z" title="Wednesday, October 11, 2017 3:35 PM">October 11, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14417" href="http://markdownnotes.com/app/#/?note=14417">
+    <span class="title ng-binding">Root finding<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-09T15:00:19.000Z" title="Monday, October 9, 2017 11:00 AM">October 9, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14398" href="http://markdownnotes.com/app/#/?note=14398">
+    <span class="title ng-binding">Street Fight Tips for Probability<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-06T23:15:11.000Z" title="Friday, October 6, 2017 7:15 PM">October 6, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14397" href="http://markdownnotes.com/app/#/?note=14397">
+    <span class="title ng-binding">Street Fight Tips for Data Analysis<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-06T23:14:49.000Z" title="Friday, October 6, 2017 7:14 PM">October 6, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14396" href="http://markdownnotes.com/app/#/?note=14396">
+    <span class="title ng-binding">Street Fight Tips for Hackathon<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-06T23:14:32.000Z" title="Friday, October 6, 2017 7:14 PM">October 6, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14395" href="http://markdownnotes.com/app/#/?note=14395">
+    <span class="title ng-binding">Street Fight Tips for R<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-06T23:14:12.000Z" title="Friday, October 6, 2017 7:14 PM">October 6, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14394" href="http://markdownnotes.com/app/#/?note=14394">
+    <span class="title ng-binding">Street Fight Tips for Python<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-06T23:13:58.000Z" title="Friday, October 6, 2017 7:13 PM">October 6, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14378" href="http://markdownnotes.com/app/#/?note=14378">
+    <span class="title ng-binding">Street Fight Tips for C++<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-05T21:02:03.000Z" title="Thursday, October 5, 2017 5:02 PM">October 5, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14361" href="http://markdownnotes.com/app/#/?note=14361">
+    <span class="title ng-binding">Street Fight Tips for Makefiles<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-05T02:51:35.000Z" title="Wednesday, October 4, 2017 10:51 PM">October 4, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} --><li note-menu-item="" ng-repeat="note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null}" class="ng-scope" draggable="true"><a ng-click="loadNoteFromMenu($event, note.id)" ng-href="/app/#/?note=14360" href="http://markdownnotes.com/app/#/?note=14360">
+    <span class="title ng-binding">Getting started<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+    <time class="subtitle ng-isolate-scope" relative="" datetime="2017-10-05T02:51:18.000Z" title="Wednesday, October 4, 2017 10:51 PM">October 4, 2017</time>
+</a>
+<div class="actions">
+    <a ng-click="exportNote(note, true)" title="Download note" class="icon ion-ios-cloud-download-outline export"></a>
+    <a ng-click="removeNote(note)" title="Send note to trash" class="icon ion-ios-trash-outline no-demo"></a>
+</div></li><!-- end ngRepeat: note in notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: null} -->
+                <li class="separator" ng-show="notebooksService.notebooks.length &gt; 0"></li>
+                <!-- ngRepeat: notebook in notebooksService.notebooks --><li class="folder notebook ng-scope" ng-repeat="notebook in notebooksService.notebooks" ng-class="{&#39;expanded&#39;: notebook.expanded}" notebook-menu-item="">
+                    <a ng-click="toggleExpanded()" ng-hide="notebook.settingsOpen" class="ng-binding">
+                        <i class="icon ion-ios-browsers-outline"></i><span class="untitled" ng-show="!notebook.title">Untitled notebook</span>
+                    </a>
+                    <span class="editable ng-hide" ng-show="notebook.settingsOpen">
+                        <i class="icon ion-ios-browsers-outline"></i>
+                        <input type="text" ng-model="notebook.title" placeholder="Untitled notebook" class="ng-pristine ng-untouched ng-valid ng-empty">
+                    </span>
+
+                    <div class="actions">
+                        <a ng-show="notebook.settingsOpen" title="Close settings" class="icon ion-ios-checkmark-outline ng-hide" ng-click="toggleSettings()"></a>
+                        <a ng-hide="notebook.settingsOpen" title="Notebook settings" class="icon ion-ios-settings" ng-click="toggleSettings()"></a>
+                    </div>
+                    <ul class="settings ng-hide" ng-show="notebook.expanded &amp;&amp; notebook.settingsOpen">
+                        <li class="separator"></li>
+                        <li class="danger">
+                            <a ng-click="deleteNotebook(notebook)" ng-confirm-click="This will delete the notebook. All notes in this notebook will be preserved.">
+                                <span class="title">Delete notebook</span>
+                                <span class="subtitle">Notes in the notebook will be not be deleted</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul ng-show="notebook.expanded &amp;&amp; !notebook.settingsOpen" class="ng-hide">
+                        <li class="separator"></li>
+                        <!-- ngRepeat: note in notes = (notesService.notes.active | orderBy:noteRanker | filter:{notebook_uri: notebook.resource_uri}) -->
+                        <li ng-show="notes.length === 0">
+                            <span class="title muted">Drag notes here to add them to this notebook.</span>
+                        </li>
+                    </ul>
+                </li><!-- end ngRepeat: notebook in notebooksService.notebooks -->
+                <li class="folder trash no-demo" ng-class="{&#39;expanded&#39;: showTrash}">
+                    <a ng-click="showTrash = !showTrash">
+                        <i class="icon ion-ios-trash-outline"></i>Trash
+                    </a>
+                    <div class="actions">
+                        <a title="Empty trash" ng-click="emptyTrash()" ng-confirm-click="This will delete every note in the trash permanently. This action cannot be reversed." class="icon ion-ios-close-outline" ng-show="notesService.notes.deleted.length &gt; 0"></a>
+                    </div>
+                    <ul ng-show="showTrash" class="ng-hide">
+                        <li class="separator"></li>
+                        <li ng-show="notesService.notes.deleted.length === 0" class="ng-hide">
+                            <span class="title muted">No notes in trash</span>
+                        </li>
+                        <!-- ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker --><li ng-repeat="note in notesService.notes.deleted | orderBy:noteRanker" class="ng-scope">
+                            <span>
+                                <span class="title ng-binding"><span class="untitled" ng-show="!note.title">Untitled note</span></span>
+                                <time class="subtitle ng-isolate-scope" relative="" datetime="2019-08-16T19:39:11.000Z" title="Friday, August 16, 2019 3:39 PM">August 16, 2019</time>
+                            </span>
+                            <div class="actions">
+                                <a ng-click="restoreNote(note)" title="Restore note" class="icon ion-ios-undo-outline"></a>
+                                <a ng-click="removeNote(note)" title="Delete note permanently" ng-confirm-click="This will delete this note permanently. This action cannot be reversed." class="icon ion-ios-close-outline"></a>
+                            </div>
+                        </li><!-- end ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker --><li ng-repeat="note in notesService.notes.deleted | orderBy:noteRanker" class="ng-scope">
+                            <span>
+                                <span class="title ng-binding">AFT<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+                                <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-26T22:33:26.000Z" title="Sunday, May 26, 2019 6:33 PM">May 26, 2019</time>
+                            </span>
+                            <div class="actions">
+                                <a ng-click="restoreNote(note)" title="Restore note" class="icon ion-ios-undo-outline"></a>
+                                <a ng-click="removeNote(note)" title="Delete note permanently" ng-confirm-click="This will delete this note permanently. This action cannot be reversed." class="icon ion-ios-close-outline"></a>
+                            </div>
+                        </li><!-- end ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker --><li ng-repeat="note in notesService.notes.deleted | orderBy:noteRanker" class="ng-scope">
+                            <span>
+                                <span class="title ng-binding">AFT<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+                                <time class="subtitle ng-isolate-scope" relative="" datetime="2019-05-26T20:27:43.000Z" title="Sunday, May 26, 2019 4:27 PM">May 26, 2019</time>
+                            </span>
+                            <div class="actions">
+                                <a ng-click="restoreNote(note)" title="Restore note" class="icon ion-ios-undo-outline"></a>
+                                <a ng-click="removeNote(note)" title="Delete note permanently" ng-confirm-click="This will delete this note permanently. This action cannot be reversed." class="icon ion-ios-close-outline"></a>
+                            </div>
+                        </li><!-- end ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker --><li ng-repeat="note in notesService.notes.deleted | orderBy:noteRanker" class="ng-scope">
+                            <span>
+                                <span class="title ng-binding"><span class="untitled" ng-show="!note.title">Untitled note</span></span>
+                                <time class="subtitle ng-isolate-scope" relative="" datetime="2018-10-26T05:38:34.000Z" title="Friday, October 26, 2018 1:38 AM">October 26, 2018</time>
+                            </span>
+                            <div class="actions">
+                                <a ng-click="restoreNote(note)" title="Restore note" class="icon ion-ios-undo-outline"></a>
+                                <a ng-click="removeNote(note)" title="Delete note permanently" ng-confirm-click="This will delete this note permanently. This action cannot be reversed." class="icon ion-ios-close-outline"></a>
+                            </div>
+                        </li><!-- end ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker --><li ng-repeat="note in notesService.notes.deleted | orderBy:noteRanker" class="ng-scope">
+                            <span>
+                                <span class="title ng-binding">LeetCode<span class="untitled ng-hide" ng-show="!note.title">Untitled note</span></span>
+                                <time class="subtitle ng-isolate-scope" relative="" datetime="2018-10-25T01:23:03.000Z" title="Wednesday, October 24, 2018 9:23 PM">October 24, 2018</time>
+                            </span>
+                            <div class="actions">
+                                <a ng-click="restoreNote(note)" title="Restore note" class="icon ion-ios-undo-outline"></a>
+                                <a ng-click="removeNote(note)" title="Delete note permanently" ng-confirm-click="This will delete this note permanently. This action cannot be reversed." class="icon ion-ios-close-outline"></a>
+                            </div>
+                        </li><!-- end ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker --><li ng-repeat="note in notesService.notes.deleted | orderBy:noteRanker" class="ng-scope">
+                            <span>
+                                <span class="title ng-binding"><span class="untitled" ng-show="!note.title">Untitled note</span></span>
+                                <time class="subtitle ng-isolate-scope" relative="" datetime="2018-09-30T04:39:36.000Z" title="Sunday, September 30, 2018 12:39 AM">September 30, 2018</time>
+                            </span>
+                            <div class="actions">
+                                <a ng-click="restoreNote(note)" title="Restore note" class="icon ion-ios-undo-outline"></a>
+                                <a ng-click="removeNote(note)" title="Delete note permanently" ng-confirm-click="This will delete this note permanently. This action cannot be reversed." class="icon ion-ios-close-outline"></a>
+                            </div>
+                        </li><!-- end ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker --><li ng-repeat="note in notesService.notes.deleted | orderBy:noteRanker" class="ng-scope">
+                            <span>
+                                <span class="title ng-binding"><span class="untitled" ng-show="!note.title">Untitled note</span></span>
+                                <time class="subtitle ng-isolate-scope" relative="" datetime="2018-08-17T16:59:31.000Z" title="Friday, August 17, 2018 12:59 PM">August 17, 2018</time>
+                            </span>
+                            <div class="actions">
+                                <a ng-click="restoreNote(note)" title="Restore note" class="icon ion-ios-undo-outline"></a>
+                                <a ng-click="removeNote(note)" title="Delete note permanently" ng-confirm-click="This will delete this note permanently. This action cannot be reversed." class="icon ion-ios-close-outline"></a>
+                            </div>
+                        </li><!-- end ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker --><li ng-repeat="note in notesService.notes.deleted | orderBy:noteRanker" class="ng-scope">
+                            <span>
+                                <span class="title ng-binding"><span class="untitled" ng-show="!note.title">Untitled note</span></span>
+                                <time class="subtitle ng-isolate-scope" relative="" datetime="2018-07-23T14:56:50.000Z" title="Monday, July 23, 2018 10:56 AM">July 23, 2018</time>
+                            </span>
+                            <div class="actions">
+                                <a ng-click="restoreNote(note)" title="Restore note" class="icon ion-ios-undo-outline"></a>
+                                <a ng-click="removeNote(note)" title="Delete note permanently" ng-confirm-click="This will delete this note permanently. This action cannot be reversed." class="icon ion-ios-close-outline"></a>
+                            </div>
+                        </li><!-- end ngRepeat: note in notesService.notes.deleted | orderBy:noteRanker -->
+                    </ul>
+                </li>
+                <li class="separator"></li>
+                <li class="no-demo"><a onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Account&#39;, &#39;Account settings&#39;, &#39;Side menu&#39;)" ng-click="accountSettings()"><i class="icon ion-ios-gear-outline"></i>Account settings</a></li>
+                <li class="no-demo"><a onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Social&#39;, &#39;Feedback&#39;, &#39;Side menu&#39;)" href="http://markdownnotes.com/feedback/" title="Give feedback"><i class="icon ion-ios-chatboxes-outline"></i>Give feedback</a></li>
+                <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=contact%40nicolasbouliane%2ecom&amp;lc=CA&amp;item_name=Markdown%20Notes&amp;no_note=1&amp;no_shipping=1&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted" target="_blank"><i class="icon ion-ios-heart-outline"></i>Donate</a></li>
+                <li class="separator"></li>
+                <li class="no-demo"><a ng-click="logOut()">Log out</a></li>
+            </ul>
+        </nav>
+        <div id="input">
+            <div id="editor" ng-click="focusEditor()">
+                <form action="http://markdownnotes.com/app/" class="ng-valid ng-dirty ng-valid-parse">
+                    <textarea id="textarea" placeholder="Start typing here..." name="input" ui-codemirror="codemirrorOptions" ng-model="notesService.notes.active[currentNoteIndex].content" class="ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse" style="display: none;"></textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 6544px; left: 562.297px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="2"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 15px; margin-bottom: 0px; border-right-width: 30px; min-height: 6628px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 547.297px; top: 6540px; height: 20px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-strong cm-strong">**</span><span class="cm-strong">First Login</span><span class="cm-formatting cm-formatting-strong cm-strong">**</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh avinash@34.231.127.126</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-strong cm-strong">**</span><span class="cm-strong">Password</span><span class="cm-formatting cm-formatting-strong cm-strong">**</span> </span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">dev101#</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Start Jupyter</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-strong cm-strong">**</span><span class="cm-strong">Only once</span><span class="cm-formatting cm-formatting-strong cm-strong">**</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">nohup jupyter notebook --no-browser --port=8888 &amp;</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Connect to Jupyter Port</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -L <span class="cm-link">localhost:8000:localhost:8888</span> avinash@34.231.127.126</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">jupyter notebook list</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">sudo reboot</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">bavinash@<span class="cm-link">mercury01.ams.stonybrook.edu/avinash</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">110975199</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -X bavinash@mercury01.ams.stonybrook.edu</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-strong cm-strong">**</span><span class="cm-strong">Cluster Login</span><span class="cm-formatting cm-formatting-strong cm-strong">**</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -X bavinash@login.seawulf.stonybrook.edu</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Install python packages</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">python3 -m pip install &lt;package-name&gt;</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">pip3 install &lt;package-name&gt;</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">jupyter kernelspec list</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">twitterscraper coindesk  -bd 2018-08-01 -ed 2018-08-31 -o tweets_aug18.json</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">sudo service mongod restart</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">npm install</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">node bin/www</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">http://127.0.0.1:3000</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">FLASK_APP=app.py flask run</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ubuntu@ec2-100-25-28-233.compute-1.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-strong cm-strong">**</span><span class="cm-strong">Local EC2</span><span class="cm-formatting cm-formatting-strong cm-strong">**</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-strong cm-strong">**</span><span class="cm-strong">Connect</span><span class="cm-formatting cm-formatting-strong cm-strong">**</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -i "test.pem" ec2-user@ec2-34-216-249-90.us-west-2.compute.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test.pem" index.html ec2-user@ec2-34-220-48-25.us-west-2.compute.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">http://34.220.48.25/</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://www.codementor.io/dushyantbgs/deploying-a-flask-application-to-aws-gnva38cf0</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">nohup sudo python3 app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Instance 2 - NYSDS-2019</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" filename ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -i "test2.pem" ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -i "test2.pem" ec2-user@ec2-35-164-105-166.us-west-2.compute.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" gene_survival_aft.py ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" test_data_luad_trans_input.csv ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" test_correlation_luad.csv ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" data_luad_trans_input.csv ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" correlation_luad.csv ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Important things to do on EC2</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@<span class="cm-link">ec2-54-200-167-6.us-west-2.compute.amazonaws.com/gene_survival_aft_0.csv</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.csv ~/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-35-164-105-166.us-west-2.compute.amazonaws.com /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.out /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.2.csv /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.2.out /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.4.csv /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.4.out /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.6.csv /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.6.out /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.8.csv /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.8.out /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_1.csv /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_1.out /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "test2.pem" ec2-user@ec2-35-164-105-166.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.csv ~/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/index.html ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-strong cm-strong">**</span><span class="cm-strong">Office EC2</span><span class="cm-formatting cm-formatting-strong cm-strong">**</span> -</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -i "avinash.pem" ubuntu@ec2-54.227.172.183.compute-1.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/index.html ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~/app.py /Users/avinashbarnwal/Downloads</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -L <span class="cm-link">localhost:8000:localhost:8888</span> ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -L "avinash.pem" <span class="cm-link">localhost:8000:localhost:8888</span> ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/pllay/API/Pllay_API_Example_WebHooks.ipynb ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">http://52.55.209.190/</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/pllay/Pllay API Example VOD Support Standalone.ipynb ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">export PATH=/Users/avinashbarnwal/Library/Java/Extensions:$PATH.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://www.google.com/flights?safe=active&amp;lite=0#flt=JFK.x/m/0f04c.2019-08-19*x/m/0f04c.JFK.2019-08-21;c:USD;e:1;sd:1;t:f</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">git clone -b avinash --single-branch <span class="cm-link">https://github.com/inncretech/link3d-job-shop-problems</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Downloads/or-tools_ubuntu-16.04_v7.2.6977.tar.gz ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -i "avinash.pem" ubuntu@ec2-54-227-172-183.compute-1.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-54-227-172-183.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-54-227-172-183.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://54.227.172.183:8889</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">http://54.227.172.183:8080/</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">http://34.234.99.205:8080</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ssh -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Please find the scrum for today.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">- Updating Code for JobShop.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">- Creating API for Duration and Cost for JobShop.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">9500 - Old</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">8080 - New</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/templates/index.html /Users/avinashbarnwal/Desktop/index.html</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/New_UI/app.py /Users/avinashbarnwal/Desktop/app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost/New_UI/app/app.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/New_UI/app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost/New_UI/app/templates/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/New_UI/templates/index.html</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/app.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/templates/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/templates/index.html</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">8080 - New UI - New app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">9400 - Old UI - New app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">9500 - Old UI - Old app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">/Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/ipynb</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/ipynb/flexible_JobShop_material_switch_search.ipynb ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/flexible_JobShop_material_switch_search.ipynb</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://ec2-34-234-99-205.compute-1.amazonaws.com:8888/</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/ipynb/flexible_JobShop_material_switch_search.ipynb ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/flexible_JobShop_material_switch_search.ipynb</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Please find the scrum for today.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">- Implement second level optimization for tardiness.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/ipynb/flexible_JobShop_material_switch_search.ipynb ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/flexible_JobShop_material_switch_search.ipynb</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/app.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/analyze.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/analyze.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/templates/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/templates/index.html</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/app.py /Users/avinashbarnwal/Desktop/app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost.tar.gz /Users/avinashbarnwal/Desktop/backup/WithOutDurationCost.tar.gz</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/backup/WithOutDurationCost-Search.tar.gz ubuntu@ec2-54-88-116-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search.tar.gz</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-list cm-formatting-list-ul cm-variable-2">- </span><span class="cm-variable-2">Testing with Tardiness, Machine Utilization and Tardiness+MachDynaDown.</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-list cm-formatting-list-ul cm-variable-2">- </span><span class="cm-variable-2">Porting Code in Java.</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Test_New_UI/app/file_tardiness_jobs_100_machines_5.txt /Users/avinashbarnwal/Desktop/file_tardiness_jobs_100_machines_5.txt</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-list cm-formatting-list-ol cm-variable-2">1. </span><span class="cm-variable-2">Managing End-to-End Data Science Project.</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-list cm-formatting-list-ol cm-variable-2">2. </span><span class="cm-variable-2">Developing Machine Learning models for investing in cryptocurrencies.</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-list cm-formatting-list-ol cm-variable-2">3. </span><span class="cm-variable-2">Based on Audience Input - Modeling in Pytorch is discussed.</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-formatting cm-formatting-list cm-formatting-list-ol cm-variable-2">4. </span><span class="cm-variable-2">Live System - Deployment of Index was discussed.</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Please find the scrum for today.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">- Creating Data Analysis for EOS Log Data.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">- Design Interface Class for JobShop</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://34-234-99-205-10-0-0-34:8889/</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://ec2-34-234-99-205.us-east-2.compute.amazonaws.com:8889/</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://ec2-34-234-99-205.compute-1.amazonaws.com:8889/notebooks/Pllay_API_Example_10_15_19.ipynb</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">Please find the scrum for today.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">- Create Service layer for Python for JobShop.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">- Testing Pllay API.</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/pllay/Pllay_API_Example_10_15_19.ipynb ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/pllay/Pllay_API_Example_10_15_19.ipynb</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_1_0.mp4</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_2_0.mp4</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_3_0.mp4</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-link">https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_3_1.mp4</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/templates/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/templates/index.html</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/Old_UI/gantt.zip ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">tardiness-early-sum &nbsp; &nbsp;  - &nbsp; min(sum(max(0,start-duedate)))</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">tardiness-machutil-sum &nbsp; - min(sum(max(0,end-duedate)) + sum(duration of machine))</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">tardiness-early-machdynadown-sum - min(sum(max(0,start-duedate)) + dynamic downtime</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/Old_UI/gantt.zip ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/gantt/app/</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">/Users/avinashbarnwal/Desktop/analyze.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/gantt/app/analyze.py /Users/avinashbarnwal/Desktop/analyze.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/Old_UI/gantt/app.py</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/gantt/app/analyze.py </span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 6628px;"></div><div class="CodeMirror-gutters" style="height: 6658px;"><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+                </form>
+            </div>
+        </div>
+        <div id="output">
+            <div id="preview" preview=""><p><strong>First Login</strong><br>ssh avinash@34.231.127.126</p>
+<p><strong>Password</strong><br>dev101#</p>
+<p>Start Jupyter<br><strong>Only once</strong></p>
+<p>nohup jupyter notebook --no-browser --port=8888 &amp;<br>Connect to Jupyter Port<br>ssh -L localhost:8000:localhost:8888 avinash@34.231.127.126</p>
+<p>jupyter notebook list<br>sudo reboot<br>bavinash@mercury01.ams.stonybrook.edu/avinash<br>110975199</p>
+<p>ssh -X bavinash@mercury01.ams.stonybrook.edu</p>
+<p><strong>Cluster Login</strong><br>ssh -X bavinash@login.seawulf.stonybrook.edu<br>Install python packages</p>
+<p>python3 -m pip install &lt;package-name&gt;<br>pip3 install &lt;package-name&gt;</p>
+<p>jupyter kernelspec list<br>twitterscraper coindesk  -bd 2018-08-01 -ed 2018-08-31 -o tweets_aug18.json<br>sudo service mongod restart</p>
+<p>npm install<br>node bin/www<br><a target="_blank" href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a><br>FLASK_APP=app.py flask run<br>ubuntu@ec2-100-25-28-233.compute-1.amazonaws.com</p>
+<p><strong>Local EC2</strong><br><strong>Connect</strong><br>ssh -i "test.pem" ec2-user@ec2-34-216-249-90.us-west-2.compute.amazonaws.com<br>scp -i "test.pem" index.html ec2-user@ec2-34-220-48-25.us-west-2.compute.amazonaws.com:~<br><a target="_blank" href="http://34.220.48.25/">http://34.220.48.25/</a><br><a target="_blank" href="https://www.codementor.io/dushyantbgs/deploying-a-flask-application-to-aws-gnva38cf0">https://www.codementor.io/dushyantbgs/deploying-a-flask-application-to-aws-gnva38cf0</a><br>nohup sudo python3 app.py</p>
+<p>Instance 2 - NYSDS-2019<br>scp -i "test2.pem" filename ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~<br>ssh -i "test2.pem" ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com<br>ssh -i "test2.pem" ec2-user@ec2-35-164-105-166.us-west-2.compute.amazonaws.com</p>
+<p>scp -i "test2.pem" gene_survival_aft.py ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~<br>scp -i "test2.pem" test_data_luad_trans_input.csv ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~<br>scp -i "test2.pem" test_correlation_luad.csv ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~<br>scp -i "test2.pem" data_luad_trans_input.csv ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~<br>scp -i "test2.pem" correlation_luad.csv ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~</p>
+<p>Important things to do on EC2<br>scp -i "test2.pem" ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com/gene_survival_aft_0.csv</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-200-167-6.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.csv ~/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-35-164-105-166.us-west-2.compute.amazonaws.com /Users/avinashbarnwal/Downloads<br>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.out /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.2.csv /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.2.out /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.4.csv /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.4.out /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.6.csv /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.6.out /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.8.csv /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.8.out /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_1.csv /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-54-203-1-30.us-west-2.compute.amazonaws.com:~/gene_survival_aft_1.out /Users/avinashbarnwal/Downloads</p>
+<p>scp -i "test2.pem" ec2-user@ec2-35-164-105-166.us-west-2.compute.amazonaws.com:~/gene_survival_aft_0.csv ~/Downloads</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/index.html ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~</p>
+<p><strong>Office EC2</strong> -<br>ssh -i "avinash.pem" ubuntu@ec2-54.227.172.183.compute-1.amazonaws.com<br>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/index.html ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~<br>scp -i "avinash.pem" ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~/app.py /Users/avinashbarnwal/Downloads<br>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~<br>ssh -L localhost:8000:localhost:8888 ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com<br>ssh -L "avinash.pem" localhost:8000:localhost:8888 ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com<br>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/pllay/API/Pllay_API_Example_WebHooks.ipynb ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~<br><a target="_blank" href="http://52.55.209.190/">http://52.55.209.190/</a><br>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/pllay/Pllay API Example VOD Support Standalone.ipynb ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~<br>export PATH=/Users/avinashbarnwal/Library/Java/Extensions:$PATH.</p>
+<p><a target="_blank" href="https://www.google.com/flights?safe=active&amp;lite=0#flt=JFK.x/m/0f04c.2019-08-19*x/m/0f04c.JFK.2019-08-21;c:USD;e:1;sd:1;t:f">https://www.google.com/flights?safe=active&amp;lite=0#flt=JFK.x/m/0f04c.2019-08-19*x/m/0f04c.JFK.2019-08-21;c:USD;e:1;sd:1;t:f</a></p>
+<p>git clone -b avinash --single-branch <a target="_blank" href="https://github.com/inncretech/link3d-job-shop-problems">https://github.com/inncretech/link3d-job-shop-problems</a><br>scp -i "avinash.pem" /Users/avinashbarnwal/Downloads/or-tools_ubuntu-16.04_v7.2.6977.tar.gz ubuntu@ec2-52-55-209-190.compute-1.amazonaws.com:~<br>ssh -i "avinash.pem" ubuntu@ec2-54-227-172-183.compute-1.amazonaws.com<br>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-54-227-172-183.compute-1.amazonaws.com:~</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-54-227-172-183.compute-1.amazonaws.com:~</p>
+<p><a target="_blank" href="https://54.227.172.183:8889/">https://54.227.172.183:8889</a></p>
+<p><a target="_blank" href="http://54.227.172.183:8080/">http://54.227.172.183:8080/</a></p>
+<p><a target="_blank" href="http://34.234.99.205:8080/">http://34.234.99.205:8080</a></p>
+<p>ssh -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/app.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/app/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~</p>
+<p>Please find the scrum for today.</p>
+<ul>
+<li>Updating Code for JobShop.</li><li>Creating API for Duration and Cost for JobShop.</li></ul>
+<p>9500 - Old<br>8080 - New</p>
+<p>scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/templates/index.html /Users/avinashbarnwal/Desktop/index.html</p>
+<p>scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/New_UI/app.py /Users/avinashbarnwal/Desktop/app.py</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost/New_UI/app/app.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/New_UI/app.py</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost/New_UI/app/templates/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/New_UI/templates/index.html</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/app.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/app.py</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/templates/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/templates/index.html</p>
+<p>8080 - New UI - New app.py<br>9400 - Old UI - New app.py<br>9500 - Old UI - Old app.py</p>
+<p>/Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/ipynb</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/ipynb/flexible_JobShop_material_switch_search.ipynb ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/flexible_JobShop_material_switch_search.ipynb</p>
+<p><a target="_blank" href="https://ec2-34-234-99-205.compute-1.amazonaws.com:8888/">https://ec2-34-234-99-205.compute-1.amazonaws.com:8888/</a></p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/ipynb/flexible_JobShop_material_switch_search.ipynb ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/flexible_JobShop_material_switch_search.ipynb</p>
+<p>Please find the scrum for today.</p>
+<ul>
+<li>Implement second level optimization for tardiness.</li></ul>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/ipynb/flexible_JobShop_material_switch_search.ipynb ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/flexible_JobShop_material_switch_search.ipynb</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/app.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/app.py</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/analyze.py ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/analyze.py</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/templates/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/templates/index.html</p>
+<p>scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/app.py /Users/avinashbarnwal/Desktop/app.py</p>
+<p>scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost.tar.gz /Users/avinashbarnwal/Desktop/backup/WithOutDurationCost.tar.gz</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/backup/WithOutDurationCost-Search.tar.gz ubuntu@ec2-54-88-116-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search.tar.gz</p>
+<ul>
+<li>Testing with Tardiness, Machine Utilization and Tardiness+MachDynaDown.</li><li>Porting Code in Java.</li></ul>
+<p>scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Test_New_UI/app/file_tardiness_jobs_100_machines_5.txt /Users/avinashbarnwal/Desktop/file_tardiness_jobs_100_machines_5.txt</p>
+<ol>
+<li>Managing End-to-End Data Science Project.</li><li>Developing Machine Learning models for investing in cryptocurrencies.</li><li>Based on Audience Input - Modeling in Pytorch is discussed.</li><li>Live System - Deployment of Index was discussed.</li></ol>
+<p>Please find the scrum for today.</p>
+<ul>
+<li>Creating Data Analysis for EOS Log Data.</li><li>Design Interface Class for JobShop</li></ul>
+<p><a target="_blank" href="https://34-234-99-205-10-0-0-34:8889/">https://34-234-99-205-10-0-0-34:8889/</a></p>
+<p><a target="_blank" href="https://ec2-34-234-99-205.us-east-2.compute.amazonaws.com:8889/">https://ec2-34-234-99-205.us-east-2.compute.amazonaws.com:8889/</a></p>
+<p><a target="_blank" href="https://ec2-34-234-99-205.compute-1.amazonaws.com:8889/notebooks/Pllay_API_Example_10_15_19.ipynb">https://ec2-34-234-99-205.compute-1.amazonaws.com:8889/notebooks/Pllay_API_Example_10_15_19.ipynb</a></p>
+<p>Please find the scrum for today.</p>
+<ul>
+<li>Create Service layer for Python for JobShop.</li><li>Testing Pllay API.</li></ul>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/pllay/Pllay_API_Example_10_15_19.ipynb ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/pllay/Pllay_API_Example_10_15_19.ipynb</p>
+<p><a target="_blank" href="https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_1_0.mp4">https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_1_0.mp4</a><br><a target="_blank" href="https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_2_0.mp4">https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_2_0.mp4</a><br><a target="_blank" href="https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_3_0.mp4">https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_3_0.mp4</a><br><a target="_blank" href="https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_3_1.mp4">https://pllay-test.s3-us-west-2.amazonaws.com/data/pllay.session.5dadebb5396706.58294549/1/events/goal_3_1.mp4</a></p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/New_UI/app/templates/index.html ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/New_UI/app/templates/index.html</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/Old_UI/gantt.zip ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/</p>
+<p>tardiness-early-sum      -   min(sum(max(0,start-duedate)))<br>tardiness-machutil-sum   - min(sum(max(0,end-duedate)) + sum(duration of machine))<br>tardiness-early-machdynadown-sum - min(sum(max(0,start-duedate)) + dynamic downtime</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/Old_UI/gantt.zip ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/</p>
+<p>scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/gantt/app/<br>/Users/avinashbarnwal/Desktop/analyze.py</p>
+<p>scp -i "avinash.pem" ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/gantt/app/analyze.py /Users/avinashbarnwal/Desktop/analyze.py</p>
+<p>scp -i "avinash.pem" /Users/avinashbarnwal/Desktop/Inncretech/JobShop/link3d-job-shop-problems/src/Python/cp_solver/WithOutDurationCost-Search/Old_UI/gantt/app.py<br>ubuntu@ec2-34-234-99-205.compute-1.amazonaws.com:~/WithOutDurationCost-Search/Old_UI/gantt/app/analyze.py </p>
+</div>
+        </div>
+    </div>
+</div></div>
+</div>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-41659843-2', 'markdownnotes.com');
+        ga('send', 'pageview');
+    </script>
+
+
+</body></html>

@@ -1,0 +1,1 @@
+angular.module('notes.config').constant('DEMO_MODE', false);
