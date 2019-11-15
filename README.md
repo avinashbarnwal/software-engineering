@@ -72,4 +72,5 @@ Read
   Ans - If we comment @SpringBootApplication and SpringApplication.run(JobShopApplication.class, args).    
   It doesn't produce web application.
 
-
+**Interesting Read**
+- https://www.freecodecamp.org/news/career-switchers-guide-to-your-dream-tech-job/
