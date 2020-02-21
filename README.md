@@ -74,3 +74,6 @@ Read
 
 **Interesting Read**
 - https://www.freecodecamp.org/news/career-switchers-guide-to-your-dream-tech-job/
+
+**Git**
+- https://geshan.com.np/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/
