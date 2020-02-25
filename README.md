@@ -1,4 +1,4 @@
-# software_engineering
+# Software Engineering
 
 All the learnings here
 
