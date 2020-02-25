@@ -77,3 +77,6 @@ Read
 
 **Git**
 - https://geshan.com.np/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/
+
+**Coding Style**
+- https://github.com/davified/clean-code-ml
