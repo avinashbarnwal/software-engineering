@@ -80,3 +80,6 @@ Read
 
 **Coding Style**
 - https://github.com/davified/clean-code-ml
+
+**Python**
+- https://www.geeksforgeeks.org/class-method-vs-static-method-python/
