@@ -83,3 +83,4 @@ Read
 
 **Python**
 - https://www.geeksforgeeks.org/class-method-vs-static-method-python/
+- https://opensource.com/article/19/5/python-3-default-mac
